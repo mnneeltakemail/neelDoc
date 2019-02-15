@@ -1,0 +1,1349 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Matcher · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tree-shaper/tree-shaper.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-inline-codes/inline-codes.css?cacheBreaker=1">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-github-gist/github-gist.css?cacheBreaker=1">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pretty-hint/pretty-hint.css?cacheBreaker=1">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pretty-link/pretty-link.css?cacheBreaker=3">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-headers-with-anchors/headers-with-anchors.css?cacheBreaker=1">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../neel-node-rest-api.html" />
+    
+    
+    <link rel="prev" href="../dex-api.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Overview</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../overview/how-to-use-this-guide.html">
+            
+                <a href="../../overview/how-to-use-this-guide.html">
+            
+                    
+                    How to Use This Guide?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    What is Neel Platform?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../overview/platform-components.html">
+            
+                <a href="../../overview/platform-components.html">
+            
+                    
+                    Platform Components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../overview/waves-official-resources.html">
+            
+                <a href="../../overview/waves-official-resources.html">
+            
+                    
+                    Neel Official Resources 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../overview/security-notes.html">
+            
+                <a href="../../overview/security-notes.html">
+            
+                    
+                    Security Notes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../overview/waves-releases.html">
+            
+                <a href="../../overview/waves-releases.html">
+            
+                    
+                    Neel Releases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../overview/waves-tokens.html">
+            
+                <a href="../../overview/waves-tokens.html">
+            
+                    
+                    Neel Tokens
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Platform Features</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../platform-features/decentralized-cryptocurrency-exchange-dex.html">
+            
+                <a href="../../platform-features/decentralized-cryptocurrency-exchange-dex.html">
+            
+                    
+                    Decentralized Exchange (DEX)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../platform-features/assets-custom-tokens.html">
+            
+                <a href="../../platform-features/assets-custom-tokens.html">
+            
+                    
+                    Tokens
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../platform-features/activation-protocol.html">
+            
+                <a href="../../platform-features/activation-protocol.html">
+            
+                    
+                    Activation Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../platform-features/neel-ng-protocol.html">
+            
+                <a href="../../platform-features/neel-ng-protocol.html">
+            
+                    
+                    Neel-NG Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Getting Started</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../getting-started/as-a-developer.html">
+            
+                <a href="../../getting-started/as-a-developer.html">
+            
+                    
+                    As a Developer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../getting-started/as-a-node-owner.html">
+            
+                <a href="../../getting-started/as-a-node-owner.html">
+            
+                    
+                    As a Node Owner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../getting-started/as-a-user.html">
+            
+                <a href="../../getting-started/as-a-user.html">
+            
+                    
+                    As a User
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Neel Full Node</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../neel-full-node/what-is-a-full-node.html">
+            
+                <a href="../../neel-full-node/what-is-a-full-node.html">
+            
+                    
+                    What is Neel Full Node 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../neel-full-node/how-to-install-a-node/how-to-install-a-node.html">
+            
+                <a href="../../neel-full-node/how-to-install-a-node/how-to-install-a-node.html">
+            
+                    
+                    How To Install a Node
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="../../neel-full-node/how-to-install-a-node/on-mac.html">
+            
+                <a href="../../neel-full-node/how-to-install-a-node/on-mac.html">
+            
+                    
+                    On Mac
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="../../neel-full-node/how-to-install-a-node/on-windows.html">
+            
+                <a href="../../neel-full-node/how-to-install-a-node/on-windows.html">
+            
+                    
+                    On Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.3" data-path="../../neel-full-node/how-to-install-a-node/on-ubuntu.html">
+            
+                <a href="../../neel-full-node/how-to-install-a-node/on-ubuntu.html">
+            
+                    
+                    On Ubuntu
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../../neel-full-node/how-to-build-and-test-a-node.html">
+            
+                <a href="../../neel-full-node/how-to-build-and-test-a-node.html">
+            
+                    
+                    How to Build and Test a Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../../neel-full-node/options-for-getting-actual-blockchain.html">
+            
+                <a href="../../neel-full-node/options-for-getting-actual-blockchain.html">
+            
+                    
+                    Options for Getting Actual Blockchain
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.4.1" data-path="../../neel-full-node/options-for-getting-actual-blockchain/state-downloading-and-applying.html">
+            
+                <a href="../../neel-full-node/options-for-getting-actual-blockchain/state-downloading-and-applying.html">
+            
+                    
+                    State Downloading and Applying
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.2" data-path="../../neel-full-node/options-for-getting-actual-blockchain/export-and-import-from-the-blockchain.html">
+            
+                <a href="../../neel-full-node/options-for-getting-actual-blockchain/export-and-import-from-the-blockchain.html">
+            
+                    
+                    Export and Import From The Blockchain
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../../neel-full-node/upgrading.html">
+            
+                <a href="../../neel-full-node/upgrading.html">
+            
+                    
+                    Upgrading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../../neel-full-node/how-to-rollback-a-node.html">
+            
+                <a href="../../neel-full-node/how-to-rollback-a-node.html">
+            
+                    
+                    How to Rollback a Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../../neel-full-node/neel-node-in-docker.html">
+            
+                <a href="../../neel-full-node/neel-node-in-docker.html">
+            
+                    
+                    neel Node in Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../../neel-full-node/configuration-parameters.html">
+            
+                <a href="../../neel-full-node/configuration-parameters.html">
+            
+                    
+                    Node Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="../../neel-full-node/logging-configuration.html">
+            
+                <a href="../../neel-full-node/logging-configuration.html">
+            
+                    
+                    Logging Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Development and API</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../client-libraries.html">
+            
+                <a href="../client-libraries.html">
+            
+                    
+                    Client Libraries
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../client-libraries/pyneel.html">
+            
+                <a href="../client-libraries/pyneel.html">
+            
+                    
+                    PyNeel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../client-libraries/neel-java-library.html">
+            
+                <a href="../client-libraries/neel-java-library.html">
+            
+                    
+                    Neel Java Library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../client-libraries/neeltx.html">
+            
+                <a href="../client-libraries/neeltx.html">
+            
+                    
+                    NeelTx
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../dex-api.html">
+            
+                <a href="../dex-api.html">
+            
+                    
+                    DEX API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="5.2.1" data-path="matcher.html">
+            
+                <a href="matcher.html">
+            
+                    
+                    Matcher
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../neel-node-rest-api.html">
+            
+                <a href="../neel-node-rest-api.html">
+            
+                    
+                    Neel Node Rest API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" data-path="../neel-node-rest-api/address.html">
+            
+                <a href="../neel-node-rest-api/address.html">
+            
+                    
+                    Address
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.2" data-path="../neel-node-rest-api/lease-transactions.html">
+            
+                <a href="../neel-node-rest-api/lease-transactions.html">
+            
+                    
+                    Lease Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.3" data-path="../neel-node-rest-api/asset-transactions.html">
+            
+                <a href="../neel-node-rest-api/asset-transactions.html">
+            
+                    
+                    Assets
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.3.1" data-path="../neel-node-rest-api/asset-transactions/public-functions.html">
+            
+                <a href="../neel-node-rest-api/asset-transactions/public-functions.html">
+            
+                    
+                    Public Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.3.2" data-path="../neel-node-rest-api/asset-transactions/private-functions.html">
+            
+                <a href="../neel-node-rest-api/asset-transactions/private-functions.html">
+            
+                    
+                    Private Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.3.3" data-path="../neel-node-rest-api/asset-transactions/distribution-methods.html">
+            
+                <a href="../neel-node-rest-api/asset-transactions/distribution-methods.html">
+            
+                    
+                    Distribution Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4" data-path="../neel-node-rest-api/alias-transaction.html">
+            
+                <a href="../neel-node-rest-api/alias-transaction.html">
+            
+                    
+                    Alias Transaction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.5" data-path="../neel-node-rest-api/transactions.html">
+            
+                <a href="../neel-node-rest-api/transactions.html">
+            
+                    
+                    Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.6" data-path="../neel-node-rest-api/peers.html">
+            
+                <a href="../neel-node-rest-api/peers.html">
+            
+                    
+                    Peers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.7" data-path="../neel-node-rest-api/blocks.html">
+            
+                <a href="../neel-node-rest-api/blocks.html">
+            
+                    
+                    Blocks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.8" data-path="../neel-node-rest-api/utils.html">
+            
+                <a href="../neel-node-rest-api/utils.html">
+            
+                    
+                    Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.9" data-path="../neel-node-rest-api/example-transactions.html">
+            
+                <a href="../neel-node-rest-api/example-transactions.html">
+            
+                    
+                    Examples of Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../examples.html">
+            
+                <a href="../examples.html">
+            
+                    
+                    Examples
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.4.1" data-path="../examples/trading-bot.html">
+            
+                <a href="../examples/trading-bot.html">
+            
+                    
+                    Create Your First crypto Trading Bot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Matcher</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="matcher"><a class="wd-go wd-go_for_header-anchor" id="section-fdb7d6bfcc3efcf7ba578d70678c9f4b" href="#section-fdb7d6bfcc3efcf7ba578d70678c9f4b">Matcher</a></h2>
+<p>The reason behind decentralized exchange (DEX, aka Matcher) is to perform secure exchange of assets issued on Waves platform. When a user sends an order to Matcher he doesn&apos;t transfer ownership of his money to anyone, his money remains on his account until the order is matched with counter-order. And Matcher guarantees to create <code>ExchangeTransaction</code> on the conditions that are not worse than in user&apos;s order. After the transaction is confirmed on blockchain user account balances of assets are changed according to amount and order execution price.</p>
+<p>Please find the matcher API for <strong><em>MainNet</em></strong> and <strong><em>TestNet</em></strong>:
+<a class="wd-pretty-link" href="https://matcher.wavesplatform.com/api-docs/index.html" title="https://matcher.wavesplatform.com/api-docs/index.html" target="_blank"><span class="wd-pretty-link__icon"><svg class="wd-ico" preserveaspectratio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"><g><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></g></svg></span><span class="wd-pretty-link__text"><span class="wd-crop">MainNet Matcher API</span></span><span class="wd-pretty-link__path"><span class="wd-crop">/api-docs/index.html</span></span></a></p>
+<p><a class="wd-pretty-link" href="https://matcher.testnet.wavesnodes.com/api-docs/index.html" title="https://matcher.testnet.wavesnodes.com/api-docs/index.html" target="_blank"><span class="wd-pretty-link__icon"><svg class="wd-ico" preserveaspectratio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"><g><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></g></svg></span><span class="wd-pretty-link__text"><span class="wd-crop">TestNet Matcher API</span></span><span class="wd-pretty-link__path"><span class="wd-crop">/api-docs/index.html</span></span></a></p>
+<h2 id="limit-order"><a class="wd-go wd-go_for_header-anchor" id="section-307295c576d46856dc6b4e89a9952ee7" href="#section-307295c576d46856dc6b4e89a9952ee7">Limit Order</a></h2>
+<pre><code class="lang-cpp">POST /matcher/orders
+</code></pre>
+<p>A user initiates his willingness to buy or sell assets by creating, signing and sending a Limit Order request to the Matcher node. The order should contain the following fields:</p>
+<p><strong>Request params:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">sender</td>
+<td style="text-align:left">PublicKeyAccount</td>
+<td style="text-align:left">Public key of order creator related to the address from which to send/receive assets</td>
+</tr>
+<tr>
+<td style="text-align:left">matcher</td>
+<td style="text-align:left">PublicKeyAccount</td>
+<td style="text-align:left">Public key of matcher to whom user authorize to match his order</td>
+</tr>
+<tr>
+<td style="text-align:left">spendAssetId</td>
+<td style="text-align:left">Option[Array[Byte]]</td>
+<td style="text-align:left">Asset Id that creator wants to spend after exchange. Empty spendAssetId means <strong>WAVES</strong></td>
+</tr>
+<tr>
+<td style="text-align:left">receiveAssetId</td>
+<td style="text-align:left">Option[Array[Byte]]</td>
+<td style="text-align:left">Asset Id that creator wants to receive after exchange. Empty receiveAssetId means <strong>WAVES</strong></td>
+</tr>
+<tr>
+<td style="text-align:left">price</td>
+<td style="text-align:left">Long</td>
+<td style="text-align:left">10^(8+Asset2Decimals-Asset1Decimals)</td>
+</tr>
+<tr>
+<td style="text-align:left">amount</td>
+<td style="text-align:left">Long</td>
+<td style="text-align:left">Amount in <code>Asset1</code></td>
+</tr>
+<tr>
+<td style="text-align:left">expiration</td>
+<td style="text-align:left">Long</td>
+<td style="text-align:left">Max time of open order to live before execution. Currently, max is 1 month</td>
+</tr>
+<tr>
+<td style="text-align:left">matcherFee</td>
+<td style="text-align:left">Long</td>
+<td style="text-align:left">Fee which goes to Matcher for order matching (execution)</td>
+</tr>
+<tr>
+<td style="text-align:left">signature</td>
+<td style="text-align:left">Array[Byte]</td>
+<td style="text-align:left">Signature of all order data created by private key of sender</td>
+</tr>
+</tbody>
+</table>
+<p><code>spendAssetId</code> and <code>receiveAssetId</code> form <code>AssetPair = (Asset1, Asset2)</code> by the following rule:</p>
+<ul>
+<li>the first asset in the pair is an asset with minimal bytes compared byte by byte starting from the first. Empty asset (
+<strong>WAVES</strong>
+) is always first in the pair. Thus:</li>
+</ul>
+<pre><code class="lang-js">AssetPair(spendAssetId, receiveAssetId) == AssetPair(receiveAssetId, spendAssetId) = (Asset1, Asset2)
+</code></pre>
+<p>For each <code>AssetPair</code>, there is exactly one <code>OrderBook</code>. <code>AsetPair</code> exists independently of which asset is &apos;spend&apos; and which is &apos;received&apos;. Thus for two different assets one <code>AssetPair</code> is created and corresponding Order Book is used for trading that <code>AssetPair</code>.</p>
+<p>After <code>AssetPair</code> is determined, <code>Order</code> can be considered of &apos;BUY&apos; or &apos;SELL&apos; type with the following rule:</p>
+<pre><code class="lang-cpp">val (Asset1, Asset2) = AssetPair(spendAssetId, receiveAssetId)
+if (receiveAssetId == Asset1) OrderType.BUY
+else if (spendAssetId == Asset1) OrderType.SELL
+</code></pre>
+<h2 id="order-validation-rules"><a class="wd-go wd-go_for_header-anchor" id="section-91a6223a0c2ba3a8b47e37dd0798ef94" href="#section-91a6223a0c2ba3a8b47e37dd0798ef94">Order validation rules</a></h2>
+<p>When a new <code>Order</code> is submitted to the Matcher all its fields are validated:</p>
+<ol>
+<li><code>amount</code> should be &gt; 0 and &lt; MaxAmount</li>
+<li><code>price</code> should be &gt; 0 and &lt;MaxAmount</li>
+<li><code>matcherFee</code> be &gt; 0 and &lt; MaxAmount</li>
+<li><code>maxTimestamp</code> should be &gt; now and &lt; than 30 days in the future</li>
+<li><code>signature</code> should be valid with regards to sender&apos;s public key</li>
+</ol>
+<p>*<code>MaxAmount = 10^18</code></p>
+<p>Additionally, the <code>Order</code> is validated based on internal<strong>Matcher</strong>state:</p>
+<ol>
+<li><code>Order</code> with such <code>id</code> should not exist already</li>
+<li>Sum of all open <code>Order</code> amounts for a particular <code>spendAssetId</code> should be &lt;= confirmed balance of that <code>spendAssetId</code> on sender&apos;s account.</li>
+</ol>
+<h2 id="matching-algorithm"><a class="wd-go wd-go_for_header-anchor" id="section-47ac45da29c06bb601f5225282434df3" href="#section-47ac45da29c06bb601f5225282434df3">Matching algorithm</a></h2>
+<h3 id="price-calculation"><a class="wd-go wd-go_for_header-anchor" id="section-d66e0803d5a7c717efbdbc69aca3cef5" href="#section-d66e0803d5a7c717efbdbc69aca3cef5">Price calculation</a></h3>
+<p>A new submitted <code>Order</code> is matched against some <code>Order</code> in <code>OrderBook</code> if there is such order that its price is <strong>better</strong> or equal to the submitted one.</p>
+<ol>
+<li>For &apos;BUY&apos; order <strong>better</strong> means there is a &apos;SELL&apos; order with price &lt;= submitted</li>
+<li>For &apos;SELL&apos; order <strong>better</strong> means there is a &apos;BUY&apos; order with price &gt;= submitted</li>
+</ol>
+<p>Execution price of <code>ExchangeTransaction</code> is always determined by the price of an order that was accepted earlier, i.e. an order that is already in <code>OrderBook</code>.</p>
+<h3 id="full-execution"><a class="wd-go wd-go_for_header-anchor" id="section-c2b31227e4d941fa844013d63ca95df9" href="#section-c2b31227e4d941fa844013d63ca95df9">Full execution</a></h3>
+<ol>
+<li>If for a submitted order there is no counter-order matched by price (which price <em>equal or better</em>) that order would be put in the corresponding <code>OrderBook</code> and remains open until executed or until <code>maxTimestamp</code> is reached.</li>
+<li>If there is a counter-order that matches with a submitted order then _order execution _is performed. That means the counter-order is removed from <code>OrderBook</code> and <code>ExchangeTransaction</code> is created and signed by the Matcher&apos;s private key and is sent to the Waves network to be included in the blockchain.</li>
+<li>If there are multiple orders, that are matched with a new order, the earliest on based on acceptance time gets chosen.</li>
+</ol>
+<h3 id="partial-execution"><a class="wd-go wd-go_for_header-anchor" id="section-fc6365c2cbb2b3ecdc03b3f91ef8d0e3" href="#section-fc6365c2cbb2b3ecdc03b3f91ef8d0e3">Partial execution</a></h3>
+<ol>
+<li>If an amount of a submitted order is a big enough to execute a few orders, Matcher creates several <code>ExchangeTransaction</code>. Created transactions have amounts equal to matched counter-order amounts. Matched counter-orders are chosen in order of their acceptance time (FIFO).</li>
+<li>If after the execution of all counter-orders at a particular price there is still remaining amount from the submitted order, the next price level of <code>OrderBook</code>, which satisfy the incoming price, is used to execute orders. For all matched counter-orders corresponding <code>ExchangeTransaction</code> are created similarly to the previous step.</li>
+<li>If after all matches found on the previous steps there is still remaining amount from the submitted order and there are no other open orders matched by the price, a new <code>Order</code> is put on <code>OrderBook</code> with remaining amount out of initial<code>Order</code>.</li>
+<li>If the first matched order in <code>OrderBook</code> has an amount greater than the submitted one, <code>ExchangeTransaction</code> will be created with amount equals to the incoming order. Partially executed counter-order will be substituted with remaining amount in <code>OrderBook</code>.</li>
+</ol>
+<h3 id="matcher-fee-calculation"><a class="wd-go wd-go_for_header-anchor" id="section-0aaadc78afab87b341db9f655bf97756" href="#section-0aaadc78afab87b341db9f655bf97756">Matcher fee calculation</a></h3>
+<ol>
+<li><code>ExchangeTransaction</code> contains two separate fields for Matcher&apos;s fee, which goes from _BUY _and _SELL _orders.</li>
+<li>If <code>Order</code> is fully executed by some transaction, all <code>matcherFee</code> from it is included in that transaction.</li>
+<li>If <code>Order</code> is partially executed by some transaction, <code>matcherFee</code>, proportionally to the executed amount, is included in that transaction, i.e. <code>executedAmount * orderMatcherFee / orderAmount</code></li>
+<li>If partially executed <code>Order</code> is fully executed by some transaction, all remaining <code>matcherFee</code> (after previous matches) is included in that transaction.</li>
+</ol>
+<h2 id="exchangetransaction-fields"><a class="wd-go wd-go_for_header-anchor" id="section-3f323276bb423d3727ef254e4a881869" href="#section-3f323276bb423d3727ef254e4a881869">ExchangeTransaction fields</a></h2>
+<p>New transaction type for blockchain is created for assets exchange. It contains the following fields:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">buyOrder</td>
+<td style="text-align:left">Order</td>
+<td style="text-align:left">Initially signed order executed in this transaction that &apos;BUY&apos; corresponding <code>AssetPair</code></td>
+</tr>
+<tr>
+<td style="text-align:left">sellOrder</td>
+<td style="text-align:left">Order</td>
+<td style="text-align:left">Initially signed order executed in this transaction that &apos;SELL&apos; corresponding <code>AssetPair</code></td>
+</tr>
+<tr>
+<td style="text-align:left">price</td>
+<td style="text-align:left">Long</td>
+<td style="text-align:left">Execution price of orders see<a href="https://github.com/wavesplatform/Waves/wiki/Matcher#price-calculation" target="_blank">algorithm</a>. Price is determined for <code>Asset2</code> in <code>Asset1</code> * 10^8</td>
+</tr>
+<tr>
+<td style="text-align:left">amount</td>
+<td style="text-align:left">Long</td>
+<td style="text-align:left">Executed amount in <code>Asset1</code> that is matched from both orders</td>
+</tr>
+<tr>
+<td style="text-align:left">buyMatcherFee</td>
+<td style="text-align:left">Long</td>
+<td style="text-align:left">Amount fee for matching from <code>buyOrder</code>. Transferred to Matcher&apos;s account balance.</td>
+</tr>
+<tr>
+<td style="text-align:left">sellMatcherFee</td>
+<td style="text-align:left">Long</td>
+<td style="text-align:left">Amount fee for matching from <code>sellOrder</code>. Transferred to Matcher&apos;s account balance.</td>
+</tr>
+<tr>
+<td style="text-align:left">fee</td>
+<td style="text-align:left">Long</td>
+<td style="text-align:left">Fee for the transaction to be included in a block by a miner. It is paid from the Matcher&apos;s account</td>
+</tr>
+<tr>
+<td style="text-align:left">timestamp</td>
+<td style="text-align:left">Long</td>
+<td style="text-align:left">Transaction creation timestamp</td>
+</tr>
+<tr>
+<td style="text-align:left">signature</td>
+<td style="text-align:left">Array[Byte]</td>
+<td style="text-align:left">Signature of all transaction data created by Matcher&apos;s private key</td>
+</tr>
+</tbody>
+</table>
+<h2 id="exchangetransaction-validation-rules"><a class="wd-go wd-go_for_header-anchor" id="section-de98b670f7ec36ec9b3275a5c286b150" href="#section-de98b670f7ec36ec9b3275a5c286b150">ExchangeTransaction validation rules</a></h2>
+<ol>
+<li><code>amount</code> should be &gt; 0 and &lt; <code>MaxAmount</code></li>
+<li><code>price</code> should be &gt; 0 and &lt; <code>MaxAmount</code></li>
+<li><code>amount</code> should be &gt; 0 and &lt; <code>MaxAmount</code></li>
+<li><code>buyMatcherFee</code> should be &gt; 0 and &lt; <code>MaxAmount</code></li>
+<li><code>sellMatcherFee</code> should be &gt; 0 and &lt; <code>MaxAmount</code></li>
+<li><code>fee</code> should be &gt;  MinTransactionFee (100000 Wavelets) and &lt; <code>MaxAmount</code></li>
+<li><code>buyOrder</code> should has <code>OrderType.BUY</code></li>
+<li><code>sellOrder</code> should has <code>OrderType.SELL</code></li>
+<li><code>buyOrder</code> should be valid according to Order validation rules and be not expired</li>
+<li><code>sellOrder</code> should be valid according to Order validation rules and be not expired</li>
+<li>Both <code>orders</code> should have same <code>Matcher</code></li>
+<li>Both <code>orders</code> should have same <code>AssetPair</code></li>
+<li><code>price</code> should be not worse than prices in <code>buyOrder</code> and <code>sellOrder</code></li>
+<li><code>amount</code> should not exceed amounts in <code>buyOrder</code> and <code>sellOrder</code></li>
+<li><code>buyMatcherFee</code> and <code>sellMatcherFee</code> should not exceed <code>matcherFee</code> in corresponding orders proportionally to the executed <code>amount</code></li>
+<li><code>signature</code> should be valid with regards to Matcher&apos;s public key.</li>
+</ol>
+<h2 id="order-book"><a class="wd-go wd-go_for_header-anchor" id="section-47429b126868ce318df0e4cc2ea3f1fe" href="#section-47429b126868ce318df0e4cc2ea3f1fe">Order Book</a></h2>
+<pre><code class="lang-cpp">GET /matcher/orderbook/{{asset1}}/{{asset2}}
+</code></pre>
+<p>Get Order Book for a given Asset Pair.</p>
+<p><strong>Request params:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">asset1</td>
+<td style="text-align:left">Array[Byte] Base58-encoded</td>
+<td style="text-align:left">One of the asset in Asset Pair, or empty if it is WAVES</td>
+</tr>
+<tr>
+<td style="text-align:left">asset2</td>
+<td style="text-align:left">Array[Byte] Base58-encoded (<em>optional</em>)</td>
+<td style="text-align:left">Another asset in Asset Pair, or empty if it is WAVES</td>
+</tr>
+<tr>
+<td style="text-align:left">depth</td>
+<td style="text-align:left">Int (<em>optional</em>)</td>
+<td style="text-align:left">Limit the number of bid/ask levels returned</td>
+</tr>
+</tbody>
+</table>
+<p>Notes about <em>depth</em>:</p>
+<ul>
+<li>The default and maximum <em>depth</em> is <strong>100</strong>;</li>
+<li>Now you can specify either <strong>10</strong> or <strong>100</strong>. If you choose another value, the near biggest will be chosen.
+For example, if you choose <strong>3</strong>, you will get <strong>10</strong> records in <em>bids</em> and <em>asks</em>;</li>
+<li>These numbers can be changed in future.</li>
+</ul>
+<p><strong>Response JSON example:</strong></p>
+<pre><code class="lang-cpp">{
+  <span class="hljs-string">&quot;timestamp&quot;</span>: <span class="hljs-number">1481544101791</span>,
+  <span class="hljs-string">&quot;pair&quot;</span>: {
+    <span class="hljs-string">&quot;asset1&quot;</span>: null,
+    <span class="hljs-string">&quot;asset2&quot;</span>: <span class="hljs-string">&quot;FaEwcAJv2HAL25ugSyiNbXvcXJiRo7TofYoxjUokd4wx&quot;</span>
+  },
+  <span class="hljs-string">&quot;bids&quot;</span>: [],
+  <span class="hljs-string">&quot;asks&quot;</span>: [
+    {
+      <span class="hljs-string">&quot;price&quot;</span>: <span class="hljs-number">200000000</span>,
+      <span class="hljs-string">&quot;amount&quot;</span>: <span class="hljs-number">50000000000</span>
+    }
+  ]
+}
+</code></pre>
+<p><strong>Response fields:</strong></p>
+<pre><code>&quot;pair&quot; - Asset Pair
+&quot;timestamp&quot; - UNIX timestamp
+&quot;bids&quot; - lists of open BUY orders level, each level is represented as a list of price and sum of all order amounts at the particular level
+&quot;asks&quot; - lists of open SELL orders level
+</code></pre><h2 id="order-status"><a class="wd-go wd-go_for_header-anchor" id="section-24be4a42e17a9dfd5e922c5617ca5972" href="#section-24be4a42e17a9dfd5e922c5617ca5972">Order Status</a></h2>
+<pre><code class="lang-cpp">GET /matcher/orders/status/{id}
+</code></pre>
+<p>Get Order status for a given Asset Pair. Status is returned for orders submitted not earlier than 30 days ago. For earlier orders, NOT_FOUND will be returned.</p>
+<p><strong>Request params:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">id</td>
+<td style="text-align:left">Array[Byte] Base58-encoded</td>
+<td style="text-align:left">Order Id to get status of</td>
+</tr>
+<tr>
+<td style="text-align:left">asset1</td>
+<td style="text-align:left">Array[Byte] Base58-encoded</td>
+<td style="text-align:left">One of the asset in Asset Pair that is not WAVES</td>
+</tr>
+<tr>
+<td style="text-align:left">asset2</td>
+<td style="text-align:left">Array[Byte] Base58-encoded (<em>optional</em>)</td>
+<td style="text-align:left">Another asset in Asset Pair or empty if it is WAVES</td>
+</tr>
+</tbody>
+</table>
+<p>Possible statuses:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Order Status</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Accepted</td>
+<td style="text-align:left">Order is accepted but is not filled yet</td>
+</tr>
+<tr>
+<td style="text-align:left">NotFound</td>
+<td style="text-align:left">Order with the given id and asset pair is not found for the last 30 days</td>
+</tr>
+<tr>
+<td style="text-align:left">PartiallyFilled</td>
+<td style="text-align:left">Order is partially filled. Already filled amount is provided in <code>filledAmount</code> field</td>
+</tr>
+<tr>
+<td style="text-align:left">Filled</td>
+<td style="text-align:left">Order is fully filed</td>
+</tr>
+<tr>
+<td style="text-align:left">Cancelled</td>
+<td style="text-align:left">Order was canceled. Already filled amount is provided in <code>filledAmount</code> field</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response JSON example:</strong></p>
+<pre><code class="lang-cpp">{
+  <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-string">&quot;PartiallyFilled&quot;</span>,
+  <span class="hljs-string">&quot;filledAmount&quot;</span>: <span class="hljs-number">30000000000</span>
+}
+</code></pre>
+<h2 id="cancel-order"><a class="wd-go wd-go_for_header-anchor" id="section-984383f0a4b76649a01185e3018e9bf5" href="#section-984383f0a4b76649a01185e3018e9bf5">Cancel Order</a></h2>
+<p>Orders, which are not fully filled, can be canceled by sending CancelOrder command. After an order is canceled it&apos;s removed from matcher&apos;s order book.</p>
+<pre><code class="lang-cpp">POST /matcher/orders/cancel
+</code></pre>
+<p><strong>Request params:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">sender</td>
+<td style="text-align:left">PublicKeyAccount</td>
+<td style="text-align:left">Public key of order creator related to the address from which to spend/receive assets</td>
+</tr>
+<tr>
+<td style="text-align:left">spendAssetId</td>
+<td style="text-align:left">Option[Array[Byte]]</td>
+<td style="text-align:left">Asset Id that creator wants to spend after exchange. Empty spendAssetId means <strong>WAVES</strong></td>
+</tr>
+<tr>
+<td style="text-align:left">receiveAssetId</td>
+<td style="text-align:left">Option[Array[Byte]]</td>
+<td style="text-align:left">Asset Id that creator wants to receive after exchange. Empty receiveAssetId means <strong>WAVES</strong></td>
+</tr>
+<tr>
+<td style="text-align:left">orderId</td>
+<td style="text-align:left">Array[Byte]</td>
+<td style="text-align:left">Accepted Order Id that sender wants to cancel.</td>
+</tr>
+<tr>
+<td style="text-align:left">fee</td>
+<td style="text-align:left">Long</td>
+<td style="text-align:left">Fee for Asset transaction, min = 100000 (WAVElets)</td>
+</tr>
+<tr>
+<td style="text-align:left">timestamp</td>
+<td style="text-align:left">Long</td>
+<td style="text-align:left">UNIX timestamp in millisec</td>
+</tr>
+<tr>
+<td style="text-align:left">signature</td>
+<td style="text-align:left">Array[Byte]</td>
+<td style="text-align:left">Signature of all transaction data</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tradable-balance"><a class="wd-go wd-go_for_header-anchor" id="section-28e71eacc6376fc1dbaa316b8fca435a" href="#section-28e71eacc6376fc1dbaa316b8fca435a">Tradable balance</a></h2>
+<p><a href="../../platform-features/decentralized-cryptocurrency-exchange-dex.html#4-tradable-balance">How much</a> you can spend in orders on the given pair.</p>
+<pre><code>GET /matcher/orderbook/{{amountAsset}}/{{priceAsset}}/tradableBalance/{{address}}
+</code></pre><p><strong>Response JSON example:</strong></p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;zMFqXuoyrn5w17PFurTqxB7GsS71fp9dfk6XFwxbPCy&quot;</span>: <span class="hljs-number">11</span>,
+  <span class="hljs-string">&quot;WAVES&quot;</span>: <span class="hljs-number">1024460284</span>
+}
+</code></pre>
+<p>So, in pair <code>zMFqXuoyrn5w17PFurTqxB7GsS71fp9dfk6XFwxbPCy/WAVES</code> you can spend <code>1024460284 WAVES</code> and <code>11 Bitcoin Cash</code>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../dex-api.html" class="navigation navigation-prev " aria-label="Previous page: DEX API">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../neel-node-rest-api.html" class="navigation navigation-next " aria-label="Next page: Neel Node Rest API">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Matcher","level":"5.2.1","depth":2,"next":{"title":"Neel Node Rest API","level":"5.3","depth":1,"path":"development-and-api/neel-node-rest-api.md","ref":"development-and-api/neel-node-rest-api.md","articles":[{"title":"Address","level":"5.3.1","depth":2,"path":"development-and-api/neel-node-rest-api/address.md","ref":"development-and-api/neel-node-rest-api/address.md","articles":[]},{"title":"Lease Transactions","level":"5.3.2","depth":2,"path":"development-and-api/neel-node-rest-api/lease-transactions.md","ref":"development-and-api/neel-node-rest-api/lease-transactions.md","articles":[]},{"title":"Assets","level":"5.3.3","depth":2,"path":"development-and-api/neel-node-rest-api/asset-transactions.md","ref":"development-and-api/neel-node-rest-api/asset-transactions.md","articles":[{"title":"Public Functions","level":"5.3.3.1","depth":3,"path":"development-and-api/neel-node-rest-api/asset-transactions/public-functions.md","ref":"development-and-api/neel-node-rest-api/asset-transactions/public-functions.md","articles":[]},{"title":"Private Functions","level":"5.3.3.2","depth":3,"path":"development-and-api/neel-node-rest-api/asset-transactions/private-functions.md","ref":"development-and-api/neel-node-rest-api/asset-transactions/private-functions.md","articles":[]},{"title":"Distribution Methods","level":"5.3.3.3","depth":3,"path":"development-and-api/neel-node-rest-api/asset-transactions/distribution-methods.md","ref":"development-and-api/neel-node-rest-api/asset-transactions/distribution-methods.md","articles":[]}]},{"title":"Alias Transaction","level":"5.3.4","depth":2,"path":"development-and-api/neel-node-rest-api/alias-transaction.md","ref":"development-and-api/neel-node-rest-api/alias-transaction.md","articles":[]},{"title":"Transactions","level":"5.3.5","depth":2,"path":"development-and-api/neel-node-rest-api/transactions.md","ref":"development-and-api/neel-node-rest-api/transactions.md","articles":[]},{"title":"Peers","level":"5.3.6","depth":2,"path":"development-and-api/neel-node-rest-api/peers.md","ref":"development-and-api/neel-node-rest-api/peers.md","articles":[]},{"title":"Blocks","level":"5.3.7","depth":2,"path":"development-and-api/neel-node-rest-api/blocks.md","ref":"development-and-api/neel-node-rest-api/blocks.md","articles":[]},{"title":"Utils","level":"5.3.8","depth":2,"path":"development-and-api/neel-node-rest-api/utils.md","ref":"development-and-api/neel-node-rest-api/utils.md","articles":[]},{"title":"Examples of Transactions","level":"5.3.9","depth":2,"path":"development-and-api/neel-node-rest-api/example-transactions.md","ref":"development-and-api/neel-node-rest-api/example-transactions.md","articles":[]}]},"previous":{"title":"DEX API","level":"5.2","depth":1,"path":"development-and-api/dex-api.md","ref":"development-and-api/dex-api.md","articles":[{"title":"Matcher","level":"5.2.1","depth":2,"path":"development-and-api/dex-api/matcher.md","ref":"development-and-api/dex-api/matcher.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-js-css","tree-shaper@git+https://github.com/KardanovIR/gitbook-plugin-tree-shaper.git","inline-codes@git+https://github.com/Shushik/gitbook-plugin-inline-codes.git","github-gist@git+https://github.com/Shushik/gitbook-plugin-github-gist.git","pretty-hint@git+https://github.com/Shushik/gitbook-plugin-pretty-hint.git","pretty-link@git+https://github.com/Shushik/gitbook-plugin-pretty-link.git","headers-with-anchors@git+https://github.com/Shushik/gitbook-plugin-headers-with-anchors.git","custom-favicon","livereload"],"pluginsConfig":{"gtm":{"token":"GTM-P2JT7Z","virtualPageViews":true},"tree-shaper":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"github-gist":{},"pretty-link":{},"fontsettings":{"theme":"white","family":"sans","size":2},"inline-codes":{},"highlight":{},"favicon":"/_theme/favicon.ico","custom-favicon":{},"custom-js-css":{"js":[],"css":[]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"headers-with-anchors":{},"pretty-hint":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"development-and-api/dex-api/matcher.md","mtime":"2019-02-12T14:06:02.171Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-15T06:05:30.340Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-tree-shaper/tree-shaper.js?cacheBreaker=91ca1700d7a3010e896528cd38d4c291"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-inline-codes/inline-codes.js?cacheBreaker=1"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

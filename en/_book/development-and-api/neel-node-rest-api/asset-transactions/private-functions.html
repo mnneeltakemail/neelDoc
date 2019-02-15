@@ -1,0 +1,1098 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Private Functions · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tree-shaper/tree-shaper.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-inline-codes/inline-codes.css?cacheBreaker=1">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-github-gist/github-gist.css?cacheBreaker=1">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-pretty-hint/pretty-hint.css?cacheBreaker=1">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-pretty-link/pretty-link.css?cacheBreaker=3">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-headers-with-anchors/headers-with-anchors.css?cacheBreaker=1">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="distribution-methods.html" />
+    
+    
+    <link rel="prev" href="public-functions.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Overview</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../overview/how-to-use-this-guide.html">
+            
+                <a href="../../../overview/how-to-use-this-guide.html">
+            
+                    
+                    How to Use This Guide?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    What is Neel Platform?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../overview/platform-components.html">
+            
+                <a href="../../../overview/platform-components.html">
+            
+                    
+                    Platform Components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../../overview/waves-official-resources.html">
+            
+                <a href="../../../overview/waves-official-resources.html">
+            
+                    
+                    Neel Official Resources 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../../overview/security-notes.html">
+            
+                <a href="../../../overview/security-notes.html">
+            
+                    
+                    Security Notes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../../overview/waves-releases.html">
+            
+                <a href="../../../overview/waves-releases.html">
+            
+                    
+                    Neel Releases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../../overview/waves-tokens.html">
+            
+                <a href="../../../overview/waves-tokens.html">
+            
+                    
+                    Neel Tokens
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Platform Features</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../../platform-features/decentralized-cryptocurrency-exchange-dex.html">
+            
+                <a href="../../../platform-features/decentralized-cryptocurrency-exchange-dex.html">
+            
+                    
+                    Decentralized Exchange (DEX)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../../platform-features/assets-custom-tokens.html">
+            
+                <a href="../../../platform-features/assets-custom-tokens.html">
+            
+                    
+                    Tokens
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../../platform-features/activation-protocol.html">
+            
+                <a href="../../../platform-features/activation-protocol.html">
+            
+                    
+                    Activation Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../../platform-features/neel-ng-protocol.html">
+            
+                <a href="../../../platform-features/neel-ng-protocol.html">
+            
+                    
+                    Neel-NG Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Getting Started</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../../getting-started/as-a-developer.html">
+            
+                <a href="../../../getting-started/as-a-developer.html">
+            
+                    
+                    As a Developer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../../getting-started/as-a-node-owner.html">
+            
+                <a href="../../../getting-started/as-a-node-owner.html">
+            
+                    
+                    As a Node Owner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../../getting-started/as-a-user.html">
+            
+                <a href="../../../getting-started/as-a-user.html">
+            
+                    
+                    As a User
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Neel Full Node</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../../neel-full-node/what-is-a-full-node.html">
+            
+                <a href="../../../neel-full-node/what-is-a-full-node.html">
+            
+                    
+                    What is Neel Full Node 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../../neel-full-node/how-to-install-a-node/how-to-install-a-node.html">
+            
+                <a href="../../../neel-full-node/how-to-install-a-node/how-to-install-a-node.html">
+            
+                    
+                    How To Install a Node
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="../../../neel-full-node/how-to-install-a-node/on-mac.html">
+            
+                <a href="../../../neel-full-node/how-to-install-a-node/on-mac.html">
+            
+                    
+                    On Mac
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="../../../neel-full-node/how-to-install-a-node/on-windows.html">
+            
+                <a href="../../../neel-full-node/how-to-install-a-node/on-windows.html">
+            
+                    
+                    On Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.3" data-path="../../../neel-full-node/how-to-install-a-node/on-ubuntu.html">
+            
+                <a href="../../../neel-full-node/how-to-install-a-node/on-ubuntu.html">
+            
+                    
+                    On Ubuntu
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../../../neel-full-node/how-to-build-and-test-a-node.html">
+            
+                <a href="../../../neel-full-node/how-to-build-and-test-a-node.html">
+            
+                    
+                    How to Build and Test a Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../../../neel-full-node/options-for-getting-actual-blockchain.html">
+            
+                <a href="../../../neel-full-node/options-for-getting-actual-blockchain.html">
+            
+                    
+                    Options for Getting Actual Blockchain
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.4.1" data-path="../../../neel-full-node/options-for-getting-actual-blockchain/state-downloading-and-applying.html">
+            
+                <a href="../../../neel-full-node/options-for-getting-actual-blockchain/state-downloading-and-applying.html">
+            
+                    
+                    State Downloading and Applying
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4.2" data-path="../../../neel-full-node/options-for-getting-actual-blockchain/export-and-import-from-the-blockchain.html">
+            
+                <a href="../../../neel-full-node/options-for-getting-actual-blockchain/export-and-import-from-the-blockchain.html">
+            
+                    
+                    Export and Import From The Blockchain
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../../../neel-full-node/upgrading.html">
+            
+                <a href="../../../neel-full-node/upgrading.html">
+            
+                    
+                    Upgrading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../../../neel-full-node/how-to-rollback-a-node.html">
+            
+                <a href="../../../neel-full-node/how-to-rollback-a-node.html">
+            
+                    
+                    How to Rollback a Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../../../neel-full-node/neel-node-in-docker.html">
+            
+                <a href="../../../neel-full-node/neel-node-in-docker.html">
+            
+                    
+                    neel Node in Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../../../neel-full-node/configuration-parameters.html">
+            
+                <a href="../../../neel-full-node/configuration-parameters.html">
+            
+                    
+                    Node Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="../../../neel-full-node/logging-configuration.html">
+            
+                <a href="../../../neel-full-node/logging-configuration.html">
+            
+                    
+                    Logging Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Development and API</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../client-libraries.html">
+            
+                <a href="../../client-libraries.html">
+            
+                    
+                    Client Libraries
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../../client-libraries/pyneel.html">
+            
+                <a href="../../client-libraries/pyneel.html">
+            
+                    
+                    PyNeel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../../client-libraries/neel-java-library.html">
+            
+                <a href="../../client-libraries/neel-java-library.html">
+            
+                    
+                    Neel Java Library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../../client-libraries/neeltx.html">
+            
+                <a href="../../client-libraries/neeltx.html">
+            
+                    
+                    NeelTx
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../../dex-api.html">
+            
+                <a href="../../dex-api.html">
+            
+                    
+                    DEX API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../../dex-api/matcher.html">
+            
+                <a href="../../dex-api/matcher.html">
+            
+                    
+                    Matcher
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../../neel-node-rest-api.html">
+            
+                <a href="../../neel-node-rest-api.html">
+            
+                    
+                    Neel Node Rest API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" data-path="../address.html">
+            
+                <a href="../address.html">
+            
+                    
+                    Address
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.2" data-path="../lease-transactions.html">
+            
+                <a href="../lease-transactions.html">
+            
+                    
+                    Lease Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.3" data-path="../asset-transactions.html">
+            
+                <a href="../asset-transactions.html">
+            
+                    
+                    Assets
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.3.1" data-path="public-functions.html">
+            
+                <a href="public-functions.html">
+            
+                    
+                    Public Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.3.3.2" data-path="private-functions.html">
+            
+                <a href="private-functions.html">
+            
+                    
+                    Private Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.3.3" data-path="distribution-methods.html">
+            
+                <a href="distribution-methods.html">
+            
+                    
+                    Distribution Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4" data-path="../alias-transaction.html">
+            
+                <a href="../alias-transaction.html">
+            
+                    
+                    Alias Transaction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.5" data-path="../transactions.html">
+            
+                <a href="../transactions.html">
+            
+                    
+                    Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.6" data-path="../peers.html">
+            
+                <a href="../peers.html">
+            
+                    
+                    Peers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.7" data-path="../blocks.html">
+            
+                <a href="../blocks.html">
+            
+                    
+                    Blocks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.8" data-path="../utils.html">
+            
+                <a href="../utils.html">
+            
+                    
+                    Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.9" data-path="../example-transactions.html">
+            
+                <a href="../example-transactions.html">
+            
+                    
+                    Examples of Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../../examples.html">
+            
+                <a href="../../examples.html">
+            
+                    
+                    Examples
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.4.1" data-path="../../examples/trading-bot.html">
+            
+                <a href="../../examples/trading-bot.html">
+            
+                    
+                    Create Your First crypto Trading Bot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Private Functions</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="private-functions"><a class="wd-go wd-go_for_header-anchor" id="section-8e5bc3726600446731ed4504b0dbce63" href="#section-8e5bc3726600446731ed4504b0dbce63">Private Functions</a></h2>
+<p>All private functions below require API Key to be provided in every HTTP request using <code>X-Api-Key</code> header. The default value is <code>ridethewaves!</code>. Securely hashed header value is stored in <code>rest-api.api-key-hash</code> setting in the waves.conf configuration file. See <a href="../../waves-node-rest-api/utils.md">/utils/hash/secure</a> for more information on how to obtain a secure hash.</p>
+<h3 id="post-assetsissue"><a class="wd-go wd-go_for_header-anchor" id="section-5e535cf72a07f6e07f46849f0951e53d" href="#section-5e535cf72a07f6e07f46849f0951e53d">POST /assets/issue</a></h3>
+<p><img src="https://img.shields.io/badge/MAINNET-available-4bc51d.svg" alt="master"></p>
+<p>Issue a new Asset for an address that exists in the node&apos;s wallet.</p>
+<p><strong>Request params:</strong></p>
+<pre><code>The same as in [Broadcast Issue Assets] besides `senderPublicKey`, `timestamp` and `signature` params.
+&quot;sender&quot; - Sender account&apos;s address that exists in the node&apos;s wallet, Base58-encoded
+</code></pre><p><strong>Request JSON example:</strong></p>
+<pre><code class="lang-js">{
+  <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;Test Asset 1&quot;</span>,
+  <span class="hljs-string">&quot;quantity&quot;</span>: <span class="hljs-number">100000000000</span>,
+  <span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-string">&quot;Some description&quot;</span>,
+  <span class="hljs-string">&quot;sender&quot;</span>: <span class="hljs-string">&quot;3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8&quot;</span>,
+  <span class="hljs-string">&quot;decimals&quot;</span>: <span class="hljs-number">8</span>,
+  <span class="hljs-string">&quot;reissuable&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-string">&quot;fee&quot;</span>: <span class="hljs-number">100000000</span>
+}
+</code></pre>
+<p><strong>Response params:</strong></p>
+<pre><code>The same as in [Broadcast Issue Assets]
+</code></pre><p><strong>Response JSON example:</strong></p>
+<pre><code>The same as in [Broadcast Issue Assets]
+</code></pre><h3 id="post-assets-reissue"><a class="wd-go wd-go_for_header-anchor" id="section-81c54bd9d4ddeeaa86f76bd68dab6217" href="#section-81c54bd9d4ddeeaa86f76bd68dab6217">POST /assets/reissue </a></h3>
+<p><img src="https://img.shields.io/badge/MAINNET-available-4bc51d.svg" alt="master"></p>
+<p>Re-issue an additional quantity of the Asset</p>
+<p><strong>Request params:</strong></p>
+<pre><code>The same as in [Broadcast Reissue Assets] besides `senderPublicKey`, `timestamp` and `signature` params.
+&quot;sender&quot; - Sender account&apos;s address that exists in the node&apos;s wallet, Base58-encoded
+</code></pre><p><strong>Request JSON example:</strong></p>
+<pre><code class="lang-js">{
+  <span class="hljs-string">&quot;quantity&quot;</span>: <span class="hljs-number">22300000000</span>,
+  <span class="hljs-string">&quot;assetId&quot;</span>: <span class="hljs-string">&quot;E9yZC4cVhCDfbjFJCc9CqkAtkoFy5KaCe64iaxHM2adG&quot;</span>,
+  <span class="hljs-string">&quot;sender&quot;</span>: <span class="hljs-string">&quot;3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8&quot;</span>,
+  <span class="hljs-string">&quot;reissuable&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-string">&quot;fee&quot;</span>: <span class="hljs-number">100000</span>
+}
+</code></pre>
+<p><strong>Response params:</strong></p>
+<pre><code>The same as in [Broadcast Reissue Assets]
+</code></pre><p><strong>Response JSON example:</strong></p>
+<pre><code>The same as in [Broadcast Reissue Assets]
+</code></pre><h3 id="post-assetsburn"><a class="wd-go wd-go_for_header-anchor" id="section-310abee295de8e5cac1d0dc805d0f656" href="#section-310abee295de8e5cac1d0dc805d0f656">POST /assets/burn</a></h3>
+<p><img src="https://img.shields.io/badge/MAINNET-available-4bc51d.svg" alt="master"></p>
+<p>Burn quantity of the Asset.</p>
+<p><strong>Request params:</strong></p>
+<pre><code>&quot;assetId&quot; - Asset ID previously issued, Base58-encoded
+&quot;sender&quot; - Sender address, Base58-encoded
+&quot;fee&quot; - Transaction fee for Asset issue, min = 100000
+&quot;amount&quot; - amount of asset&apos;lets to burn (number of indivisible pieces of assets)
+</code></pre><p><strong>Request JSON example:</strong></p>
+<pre><code class="lang-js">{
+  <span class="hljs-string">&quot;sender&quot;</span> : <span class="hljs-string">&quot;EHDZiTW9uhZmpfKRyJtusHXCQ3ABwJ3t9dxZdiPp2GZC&quot;</span>,
+  <span class="hljs-string">&quot;fee&quot;</span> : <span class="hljs-number">100000000</span>,
+  <span class="hljs-string">&quot;assetId&quot;</span> : <span class="hljs-string">&quot;AP5dp4LsmdU7dKHDcgm6kcWmeaqzWi2pXyemrn4yTzfo&quot;</span>,
+  <span class="hljs-string">&quot;amount&quot;</span> : <span class="hljs-number">50000</span>
+}
+</code></pre>
+<p><strong>Response JSON example:</strong></p>
+<pre><code class="lang-js">{
+  <span class="hljs-string">&quot;type&quot;</span> : <span class="hljs-number">6</span>,
+  <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-string">&quot;AoqmyXSurAoLqH5zbcKPtksdPwadgudhE7tZ495cQDWs&quot;</span>,
+  <span class="hljs-string">&quot;sender&quot;</span> : <span class="hljs-string">&quot;3HRUALDoUaWAmAndWRqhbiQFoqgamhAVggE&quot;</span>,
+  <span class="hljs-string">&quot;senderPublicKey&quot;</span> : <span class="hljs-string">&quot;EHDZiTW9uhZmpfKRyJtusHXCQ3ABwJ3t9dxZdiPp2GZC&quot;</span>,
+  <span class="hljs-string">&quot;fee&quot;</span> : <span class="hljs-number">100000000</span>,
+  <span class="hljs-string">&quot;timestamp&quot;</span> : <span class="hljs-number">1495623946088</span>,
+  <span class="hljs-string">&quot;signature&quot;</span> : <span class="hljs-string">&quot;4sWPrZFpR379XC4Med1y8AK2Avmx8nVUxVAzsE4QMzEeMtQyHgjzfQsi2Y5VY7diCqMAzohy9ZSTP3yfiB3QPQMd&quot;</span>,
+  <span class="hljs-string">&quot;assetId&quot;</span> : <span class="hljs-string">&quot;AP5dp4LsmdU7dKHDcgm6kcWmeaqzWi2pXyemrn4yTzfo&quot;</span>,
+  <span class="hljs-string">&quot;amount&quot;</span> : <span class="hljs-number">50000</span>
+}
+</code></pre>
+<h3 id="post-assetstransfer"><a class="wd-go wd-go_for_header-anchor" id="section-fed8ba85ea99880c2494674f15399a1b" href="#section-fed8ba85ea99880c2494674f15399a1b">POST /assets/transfer</a></h3>
+<p><img src="https://img.shields.io/badge/MAINNET-available-4bc51d.svg" alt="master"></p>
+<p>Create transaction to transfer assets from one address to another.</p>
+<p><strong>Request params:</strong></p>
+<pre><code>The same as in [Broadcast Transfer Assets] besides `senderPublicKey`, `timestamp` and `signature` params.
+&quot;sender&quot; - Sender account&apos;s address that exists in the node&apos;s wallet, Base58-encoded
+</code></pre><p><strong>Request JSON example:</strong></p>
+<pre><code class="lang-js">{
+  <span class="hljs-string">&quot;assetId&quot;</span>: <span class="hljs-string">&quot;E9yZC4cVhCDfbjFJCc9CqkAtkoFy5KaCe64iaxHM2adG&quot;</span>,
+  <span class="hljs-string">&quot;sender&quot;</span>: <span class="hljs-string">&quot;3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8&quot;</span>,
+  <span class="hljs-string">&quot;recipient&quot;</span>: <span class="hljs-string">&quot;3Mx2afTZ2KbRrLNbytyzTtXukZvqEB8SkW7&quot;</span>,
+  <span class="hljs-string">&quot;fee&quot;</span>: <span class="hljs-number">100000</span>,
+  <span class="hljs-string">&quot;amount&quot;</span>: <span class="hljs-number">5500000000</span>,
+  <span class="hljs-string">&quot;attachment&quot;</span>: <span class="hljs-string">&quot;BJa6cfyGUmzBFTj3vvvaew&quot;</span>
+}
+</code></pre>
+<p><strong>Response params:</strong></p>
+<pre><code>The same as in [Broadcast Transfer Assets]
+</code></pre><p><strong>Response JSON example:</strong></p>
+<pre><code>The same as in [Broadcast Transfer Assets]
+</code></pre><h3 id="post-assetsmasstransfer"><a class="wd-go wd-go_for_header-anchor" id="section-14b545d0ffee6588b583fdcb181f1908" href="#section-14b545d0ffee6588b583fdcb181f1908">POST /assets/masstransfer</a></h3>
+<p><img src="https://img.shields.io/badge/MAINNET-available-4bc51d.svg" alt="master"></p>
+<p>Create transaction to transfer an asset to several recipient addresses at once.</p>
+<p><strong>Request params:</strong></p>
+<pre><code>&quot;sender&quot; - Sender address, Base58-encoded
+&quot;assetId&quot; - ID of the asset to send. By default, WAVES is assumed.
+&quot;transfers&quot; - list of (recipient, amount) pairs where
+   &quot;recipient&quot; is a Base58 address, and
+   &quot;amount&quot; is the amount to send to that address.
+&quot;fee&quot; - Transaction fee, by default 100000 + 50000 * (number of transfers)
+&quot;attachment&quot; - Arbitrary message, Base58 encoded, 140 bytes max.
+</code></pre><p><strong>Request JSON example:</strong></p>
+<pre><code class="lang-js">{
+  <span class="hljs-string">&quot;sender&quot;</span> : <span class="hljs-string">&quot;3HhQxe5kLwuTfE3psYcorrhogY4fCwz2BSh&quot;</span>,
+  <span class="hljs-string">&quot;fee&quot;</span> : <span class="hljs-number">200000</span>,
+  <span class="hljs-string">&quot;assetId&quot;</span> : <span class="hljs-literal">null</span>,
+  <span class="hljs-string">&quot;attachment&quot;</span> : <span class="hljs-string">&quot;59QuUcqP6p&quot;</span>,
+  <span class="hljs-string">&quot;transfers&quot;</span> : [ {
+    <span class="hljs-string">&quot;recipient&quot;</span> : <span class="hljs-string">&quot;3HUQa6qtLhNvBJNyPV1pDRahbrcuQkaDQv2&quot;</span>,
+    <span class="hljs-string">&quot;amount&quot;</span> : <span class="hljs-number">100000000</span>
+  }, {
+    <span class="hljs-string">&quot;recipient&quot;</span> : <span class="hljs-string">&quot;3HaAdZcCXAqhvFj113Gbe3Kww4rCGMUZaEZ&quot;</span>,
+    <span class="hljs-string">&quot;amount&quot;</span> : <span class="hljs-number">200000000</span>
+  } ]
+}
+</code></pre>
+<p><strong>Response JSON example:</strong></p>
+<pre><code class="lang-js">{
+  <span class="hljs-string">&quot;type&quot;</span> : <span class="hljs-number">11</span>,
+  <span class="hljs-string">&quot;id&quot;</span> : <span class="hljs-string">&quot;BG7MQF8KffVU6MMbJW5xPowVQsohwJhfEJ4wSF8cWdC2&quot;</span>,
+  <span class="hljs-string">&quot;sender&quot;</span> : <span class="hljs-string">&quot;3HhQxe5kLwuTfE3psYcorrhogY4fCwz2BSh&quot;</span>,
+  <span class="hljs-string">&quot;senderPublicKey&quot;</span> : <span class="hljs-string">&quot;7eAkEXtFGRPQ9pxjhtcQtbH889n8xSPWuswKfW2v3iK4&quot;</span>,
+  <span class="hljs-string">&quot;fee&quot;</span> : <span class="hljs-number">200000</span>,
+  <span class="hljs-string">&quot;timestamp&quot;</span> : <span class="hljs-number">1518091313964</span>,
+  <span class="hljs-string">&quot;signature&quot;</span> : <span class="hljs-string">&quot;4Ph6RpcPFfBhU2fx6JgcHLwBuYSpnEzfHvuAHaVVi8mPjn9D69LX7UaCtBEGjtaTJ7uBwhF38nc7wMEZDL4rYLDV&quot;</span>,
+  <span class="hljs-string">&quot;assetId&quot;</span> : <span class="hljs-literal">null</span>,
+  <span class="hljs-string">&quot;attachment&quot;</span> : <span class="hljs-string">&quot;59QuUcqP6p&quot;</span>,
+  <span class="hljs-string">&quot;transfers&quot;</span> : [ {
+    <span class="hljs-string">&quot;recipient&quot;</span> : <span class="hljs-string">&quot;3HUQa6qtLhNvBJNyPV1pDRahbrcuQkaDQv2&quot;</span>,
+    <span class="hljs-string">&quot;amount&quot;</span> : <span class="hljs-number">100000000</span>
+  }, {
+    <span class="hljs-string">&quot;recipient&quot;</span> : <span class="hljs-string">&quot;3HaAdZcCXAqhvFj113Gbe3Kww4rCGMUZaEZ&quot;</span>,
+    <span class="hljs-string">&quot;amount&quot;</span> : <span class="hljs-number">200000000</span>
+  } ]
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="public-functions.html" class="navigation navigation-prev " aria-label="Previous page: Public Functions">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="distribution-methods.html" class="navigation navigation-next " aria-label="Next page: Distribution Methods">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Private Functions","level":"5.3.3.2","depth":3,"next":{"title":"Distribution Methods","level":"5.3.3.3","depth":3,"path":"development-and-api/neel-node-rest-api/asset-transactions/distribution-methods.md","ref":"development-and-api/neel-node-rest-api/asset-transactions/distribution-methods.md","articles":[]},"previous":{"title":"Public Functions","level":"5.3.3.1","depth":3,"path":"development-and-api/neel-node-rest-api/asset-transactions/public-functions.md","ref":"development-and-api/neel-node-rest-api/asset-transactions/public-functions.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-js-css","tree-shaper@git+https://github.com/KardanovIR/gitbook-plugin-tree-shaper.git","inline-codes@git+https://github.com/Shushik/gitbook-plugin-inline-codes.git","github-gist@git+https://github.com/Shushik/gitbook-plugin-github-gist.git","pretty-hint@git+https://github.com/Shushik/gitbook-plugin-pretty-hint.git","pretty-link@git+https://github.com/Shushik/gitbook-plugin-pretty-link.git","headers-with-anchors@git+https://github.com/Shushik/gitbook-plugin-headers-with-anchors.git","custom-favicon","livereload"],"pluginsConfig":{"gtm":{"token":"GTM-P2JT7Z","virtualPageViews":true},"tree-shaper":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"github-gist":{},"pretty-link":{},"fontsettings":{"theme":"white","family":"sans","size":2},"inline-codes":{},"highlight":{},"favicon":"/_theme/favicon.ico","custom-favicon":{},"custom-js-css":{"js":[],"css":[]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"headers-with-anchors":{},"pretty-hint":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"development-and-api/neel-node-rest-api/asset-transactions/private-functions.md","mtime":"2019-02-12T14:06:02.175Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-15T06:05:30.340Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-tree-shaper/tree-shaper.js?cacheBreaker=91ca1700d7a3010e896528cd38d4c291"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-inline-codes/inline-codes.js?cacheBreaker=1"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

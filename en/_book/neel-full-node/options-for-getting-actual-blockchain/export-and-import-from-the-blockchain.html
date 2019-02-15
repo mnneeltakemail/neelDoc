@@ -1,0 +1,997 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Export and Import From The Blockchain · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tree-shaper/tree-shaper.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-inline-codes/inline-codes.css?cacheBreaker=1">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-github-gist/github-gist.css?cacheBreaker=1">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pretty-hint/pretty-hint.css?cacheBreaker=1">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pretty-link/pretty-link.css?cacheBreaker=3">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-headers-with-anchors/headers-with-anchors.css?cacheBreaker=1">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../upgrading.html" />
+    
+    
+    <link rel="prev" href="state-downloading-and-applying.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Overview</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../overview/how-to-use-this-guide.html">
+            
+                <a href="../../overview/how-to-use-this-guide.html">
+            
+                    
+                    How to Use This Guide?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    What is Neel Platform?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../overview/platform-components.html">
+            
+                <a href="../../overview/platform-components.html">
+            
+                    
+                    Platform Components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../overview/waves-official-resources.html">
+            
+                <a href="../../overview/waves-official-resources.html">
+            
+                    
+                    Neel Official Resources 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../overview/security-notes.html">
+            
+                <a href="../../overview/security-notes.html">
+            
+                    
+                    Security Notes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../overview/waves-releases.html">
+            
+                <a href="../../overview/waves-releases.html">
+            
+                    
+                    Neel Releases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../overview/waves-tokens.html">
+            
+                <a href="../../overview/waves-tokens.html">
+            
+                    
+                    Neel Tokens
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Platform Features</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../platform-features/decentralized-cryptocurrency-exchange-dex.html">
+            
+                <a href="../../platform-features/decentralized-cryptocurrency-exchange-dex.html">
+            
+                    
+                    Decentralized Exchange (DEX)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../platform-features/assets-custom-tokens.html">
+            
+                <a href="../../platform-features/assets-custom-tokens.html">
+            
+                    
+                    Tokens
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../platform-features/activation-protocol.html">
+            
+                <a href="../../platform-features/activation-protocol.html">
+            
+                    
+                    Activation Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../platform-features/neel-ng-protocol.html">
+            
+                <a href="../../platform-features/neel-ng-protocol.html">
+            
+                    
+                    Neel-NG Protocol
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Getting Started</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../getting-started/as-a-developer.html">
+            
+                <a href="../../getting-started/as-a-developer.html">
+            
+                    
+                    As a Developer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../getting-started/as-a-node-owner.html">
+            
+                <a href="../../getting-started/as-a-node-owner.html">
+            
+                    
+                    As a Node Owner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../getting-started/as-a-user.html">
+            
+                <a href="../../getting-started/as-a-user.html">
+            
+                    
+                    As a User
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Neel Full Node</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../what-is-a-full-node.html">
+            
+                <a href="../what-is-a-full-node.html">
+            
+                    
+                    What is Neel Full Node 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../how-to-install-a-node/how-to-install-a-node.html">
+            
+                <a href="../how-to-install-a-node/how-to-install-a-node.html">
+            
+                    
+                    How To Install a Node
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="../how-to-install-a-node/on-mac.html">
+            
+                <a href="../how-to-install-a-node/on-mac.html">
+            
+                    
+                    On Mac
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="../how-to-install-a-node/on-windows.html">
+            
+                <a href="../how-to-install-a-node/on-windows.html">
+            
+                    
+                    On Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.3" data-path="../how-to-install-a-node/on-ubuntu.html">
+            
+                <a href="../how-to-install-a-node/on-ubuntu.html">
+            
+                    
+                    On Ubuntu
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../how-to-build-and-test-a-node.html">
+            
+                <a href="../how-to-build-and-test-a-node.html">
+            
+                    
+                    How to Build and Test a Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../options-for-getting-actual-blockchain.html">
+            
+                <a href="../options-for-getting-actual-blockchain.html">
+            
+                    
+                    Options for Getting Actual Blockchain
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.4.1" data-path="state-downloading-and-applying.html">
+            
+                <a href="state-downloading-and-applying.html">
+            
+                    
+                    State Downloading and Applying
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.4.2" data-path="export-and-import-from-the-blockchain.html">
+            
+                <a href="export-and-import-from-the-blockchain.html">
+            
+                    
+                    Export and Import From The Blockchain
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../upgrading.html">
+            
+                <a href="../upgrading.html">
+            
+                    
+                    Upgrading
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../how-to-rollback-a-node.html">
+            
+                <a href="../how-to-rollback-a-node.html">
+            
+                    
+                    How to Rollback a Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../neel-node-in-docker.html">
+            
+                <a href="../neel-node-in-docker.html">
+            
+                    
+                    neel Node in Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../configuration-parameters.html">
+            
+                <a href="../configuration-parameters.html">
+            
+                    
+                    Node Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="../logging-configuration.html">
+            
+                <a href="../logging-configuration.html">
+            
+                    
+                    Logging Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Development and API</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../development-and-api/client-libraries.html">
+            
+                <a href="../../development-and-api/client-libraries.html">
+            
+                    
+                    Client Libraries
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../../development-and-api/client-libraries/pyneel.html">
+            
+                <a href="../../development-and-api/client-libraries/pyneel.html">
+            
+                    
+                    PyNeel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../../development-and-api/client-libraries/neel-java-library.html">
+            
+                <a href="../../development-and-api/client-libraries/neel-java-library.html">
+            
+                    
+                    Neel Java Library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../../development-and-api/client-libraries/neeltx.html">
+            
+                <a href="../../development-and-api/client-libraries/neeltx.html">
+            
+                    
+                    NeelTx
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../../development-and-api/dex-api.html">
+            
+                <a href="../../development-and-api/dex-api.html">
+            
+                    
+                    DEX API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../../development-and-api/dex-api/matcher.html">
+            
+                <a href="../../development-and-api/dex-api/matcher.html">
+            
+                    
+                    Matcher
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../../development-and-api/neel-node-rest-api.html">
+            
+                <a href="../../development-and-api/neel-node-rest-api.html">
+            
+                    
+                    Neel Node Rest API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" data-path="../../development-and-api/neel-node-rest-api/address.html">
+            
+                <a href="../../development-and-api/neel-node-rest-api/address.html">
+            
+                    
+                    Address
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.2" data-path="../../development-and-api/neel-node-rest-api/lease-transactions.html">
+            
+                <a href="../../development-and-api/neel-node-rest-api/lease-transactions.html">
+            
+                    
+                    Lease Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.3" data-path="../../development-and-api/neel-node-rest-api/asset-transactions.html">
+            
+                <a href="../../development-and-api/neel-node-rest-api/asset-transactions.html">
+            
+                    
+                    Assets
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.3.1" data-path="../../development-and-api/neel-node-rest-api/asset-transactions/public-functions.html">
+            
+                <a href="../../development-and-api/neel-node-rest-api/asset-transactions/public-functions.html">
+            
+                    
+                    Public Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.3.2" data-path="../../development-and-api/neel-node-rest-api/asset-transactions/private-functions.html">
+            
+                <a href="../../development-and-api/neel-node-rest-api/asset-transactions/private-functions.html">
+            
+                    
+                    Private Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.3.3" data-path="../../development-and-api/neel-node-rest-api/asset-transactions/distribution-methods.html">
+            
+                <a href="../../development-and-api/neel-node-rest-api/asset-transactions/distribution-methods.html">
+            
+                    
+                    Distribution Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4" data-path="../../development-and-api/neel-node-rest-api/alias-transaction.html">
+            
+                <a href="../../development-and-api/neel-node-rest-api/alias-transaction.html">
+            
+                    
+                    Alias Transaction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.5" data-path="../../development-and-api/neel-node-rest-api/transactions.html">
+            
+                <a href="../../development-and-api/neel-node-rest-api/transactions.html">
+            
+                    
+                    Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.6" data-path="../../development-and-api/neel-node-rest-api/peers.html">
+            
+                <a href="../../development-and-api/neel-node-rest-api/peers.html">
+            
+                    
+                    Peers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.7" data-path="../../development-and-api/neel-node-rest-api/blocks.html">
+            
+                <a href="../../development-and-api/neel-node-rest-api/blocks.html">
+            
+                    
+                    Blocks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.8" data-path="../../development-and-api/neel-node-rest-api/utils.html">
+            
+                <a href="../../development-and-api/neel-node-rest-api/utils.html">
+            
+                    
+                    Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.9" data-path="../../development-and-api/neel-node-rest-api/example-transactions.html">
+            
+                <a href="../../development-and-api/neel-node-rest-api/example-transactions.html">
+            
+                    
+                    Examples of Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../../development-and-api/examples.html">
+            
+                <a href="../../development-and-api/examples.html">
+            
+                    
+                    Examples
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.4.1" data-path="../../development-and-api/examples/trading-bot.html">
+            
+                <a href="../../development-and-api/examples/trading-bot.html">
+            
+                    
+                    Create Your First crypto Trading Bot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Export and Import From The Blockchain</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="export-and-import-from-the-blockchain"><a class="wd-go wd-go_for_header-anchor" id="section-2e8cb40b406def159965145522a7db4d" href="#section-2e8cb40b406def159965145522a7db4d">Export and Import From The Blockchain</a></h1>
+<p><img src="https://img.shields.io/badge/node-&gt;%3D0.8.0-4bc51d.svg" alt="master"></p>
+<h2 id="user-content-export-existing-blocks-to-a-binary-file"><a class="wd-go wd-go_for_header-anchor" id="section-2d37eea53a14ace5581d3f6f737c4a29" href="#section-2d37eea53a14ace5581d3f6f737c4a29">Export Existing Blocks to a Binary File </a></h2>
+<p>You have to stop the node before starting export of blocks. To export existing blockchain to the binary file run following command. Export is quite a fast operation, but resulting binary file could additionally take up to 1/3 of <code>data</code> folder size on disk.</p>
+<p><em><strong>On Windows:</strong></em></p>
+<pre><code>java -cp waves-all-&lt;version&gt;.jar com.wavesplatform.Exporter [configuration-file-name] [output-file-name] [height]
+</code></pre><p><em><strong>On Linux:</strong></em></p>
+<pre><code>Mainnet: sudo -u waves exporter /etc/waves/waves.conf [output-file-name] [height]
+Testnet: sudo -u waves-testnet exporter-testnet /etc/waves-testnet/waves.conf [output-file-name] [height]
+</code></pre><p>If the parameter <code>height</code> was not given, all blocks will be exported. Otherwise, only blocks up to that <code>height</code> will be exported to the output file.</p>
+<p>The output file name parameter is optional, name &apos;blockchain&apos; is used by default. As a result, a file named &apos;&lt;output-file-name&gt;-&lt;height&gt;&apos; will be created in the current folder.</p>
+<h2 id="remove-the-existing-nodes-data"><a class="wd-go wd-go_for_header-anchor" id="section-1eb56ee7b6916defd90ffebc4ba3f68d" href="#section-1eb56ee7b6916defd90ffebc4ba3f68d">Remove the Existing Node&apos;s Data</a></h2>
+<p>In order to fully rebuild the node&apos;s state, you have to remove the existing node&apos;s <code>data</code> folder.<br>On Windows, <code>data</code> folder usually located in <code>%HOMEPATH%\waves\data</code>.</p>
+<p>On Linux it&apos;s in the <code>/var/lib/waves[-testnet]/</code> folder:</p>
+<pre><code>sudo rm -rdf /var/lib/waves[-testnet]/data
+</code></pre><h2 id="downloading-exported-blockchain"><a class="wd-go wd-go_for_header-anchor" id="section-4fc821c89c016f375dbd2eeedfe093cf" href="#section-4fc821c89c016f375dbd2eeedfe093cf">Downloading Exported Blockchain</a></h2>
+<p>You can download recently exported blockchains using following links:
+<a class="wd-pretty-link" href="http://blockchain.wavesnodes.com/" title="http://blockchain.wavesnodes.com/" target="_blank"><span class="wd-pretty-link__icon"><svg class="wd-ico" preserveaspectratio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"><g><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></g></svg></span><span class="wd-pretty-link__text"><span class="wd-crop">MainNet</span></span><span class="wd-pretty-link__path"><span class="wd-crop">/</span></span></a></p>
+<p><a class="wd-pretty-link" href="http://blockchain.testnet.wavesnodes.com/" title="http://blockchain.testnet.wavesnodes.com/" target="_blank"><span class="wd-pretty-link__icon"><svg class="wd-ico" preserveaspectratio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"><g><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></g></svg></span><span class="wd-pretty-link__text"><span class="wd-crop">TestNet</span></span><span class="wd-pretty-link__path"><span class="wd-crop">/</span></span></a></p>
+<h1 id="import-blocks-from-the-binary-file"><a class="wd-go wd-go_for_header-anchor" id="section-b27862acbd2e403e92214482229e2843" href="#section-b27862acbd2e403e92214482229e2843">Import Blocks From The Binary File</a></h1>
+<p>The node must be stopped before importing the blockchain. If you already have some data in the node&apos;s <code>data</code> folder, the import will continue to append new data from the blockchain&apos;s binary file. So, you may want to remove the existing data. The user should be careful while appending data because mixing data from different versions can lead to an erroneous state.</p>
+<p>To import the blockchain and rebuild the state run the following command(Import is a heavy operation and could take a few hours to complete):</p>
+<p>On Windows:</p>
+<pre><code>java -cp waves-all-&lt;version&gt;.jar com.wavesplatform.Importer [configuration-file-name] [binary-file-name]
+</code></pre><p>On Linux:</p>
+<pre><code>Mainnet: sudo -u waves importer /etc/waves/waves.conf [binary-file-name]
+
+Testnet: sudo -u waves-testnet importer-testnet /etc/waves-testnet/waves.conf [binary-file-name]
+</code></pre><h2 id="import-blocks-from-a-certain-height"><a class="wd-go wd-go_for_header-anchor" id="section-74178616d510c34647694dfbe8737efa" href="#section-74178616d510c34647694dfbe8737efa">Import blocks from a certain height</a></h2>
+<p>when importing, The user can specify the target height. If the parameter <code>height</code> was not given, all blocks will be imported. To accomplish that, the user need to write the following commands:</p>
+<p>On Windows:</p>
+<pre><code>java com.wavesplatform.Importer &lt;config_file&gt; &lt;blockchain_file&gt; &lt;height&gt;
+</code></pre><p>On Linux(MainNet):</p>
+<pre><code>sudo -u waves /usr/share/waves/bin/importer /etc/waves/waves.conf /path/to/mainnet-1234688 500
+</code></pre><p>On Linux(TestNet):</p>
+<pre><code>sudo -u waves-testnet /usr/share/waves-testnet/bin/importer-testnet /etc/waves-testnet/waves.conf /path/to/testnet-1234688 500
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="state-downloading-and-applying.html" class="navigation navigation-prev " aria-label="Previous page: State Downloading and Applying">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../upgrading.html" class="navigation navigation-next " aria-label="Next page: Upgrading">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Export and Import From The Blockchain","level":"4.4.2","depth":2,"next":{"title":"Upgrading","level":"4.5","depth":1,"path":"neel-full-node/upgrading.md","ref":"neel-full-node/upgrading.md","articles":[]},"previous":{"title":"State Downloading and Applying","level":"4.4.1","depth":2,"path":"neel-full-node/options-for-getting-actual-blockchain/state-downloading-and-applying.md","ref":"neel-full-node/options-for-getting-actual-blockchain/state-downloading-and-applying.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-js-css","tree-shaper@git+https://github.com/KardanovIR/gitbook-plugin-tree-shaper.git","inline-codes@git+https://github.com/Shushik/gitbook-plugin-inline-codes.git","github-gist@git+https://github.com/Shushik/gitbook-plugin-github-gist.git","pretty-hint@git+https://github.com/Shushik/gitbook-plugin-pretty-hint.git","pretty-link@git+https://github.com/Shushik/gitbook-plugin-pretty-link.git","headers-with-anchors@git+https://github.com/Shushik/gitbook-plugin-headers-with-anchors.git","custom-favicon","livereload"],"pluginsConfig":{"gtm":{"token":"GTM-P2JT7Z","virtualPageViews":true},"tree-shaper":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"github-gist":{},"pretty-link":{},"fontsettings":{"theme":"white","family":"sans","size":2},"inline-codes":{},"highlight":{},"favicon":"/_theme/favicon.ico","custom-favicon":{},"custom-js-css":{"js":[],"css":[]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"headers-with-anchors":{},"pretty-hint":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"neel-full-node/options-for-getting-actual-blockchain/export-and-import-from-the-blockchain.md","mtime":"2019-02-12T14:06:02.415Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-15T06:05:30.340Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-tree-shaper/tree-shaper.js?cacheBreaker=91ca1700d7a3010e896528cd38d4c291"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-inline-codes/inline-codes.js?cacheBreaker=1"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

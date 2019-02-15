@@ -1,0 +1,17 @@
+# Официальные ресурсы Waves
+
+* [**Официальный сайт**](https://wavesplatform.com)
+* [**Waves клиент**](https://wavesplatform.com/product)
+* [**Онлайн кошелёк**](https://client.wavesplatform.com/wallet)
+* [**Мобильное приложение под iOS**](https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8)
+* [**Мобильное приложение под Android**](https://play.google.com/store/apps/details?id=com.wavesplatform.wallet)
+* [**Открытый исходный код на GitHub**](https://github.com/wavesplatform/)
+* [**Main Net**](http://wavesexplorer.com)
+* [**Test Net**](https://testnet.wavesexplorer.com)
+* [**Служба поддержки**](https://support.wavesplatform.com/)
+* [**Waves desk**](https://wavesdesk.com)
+* [**WavesGo**](http://wavesgo.com)
+* [**Официальная группа на Facebook**](https://www.facebook.com/wavesplatform)
+* [**Twitter**](https://twitter.com/wavesplatform?lang=en)
+* [**Блог**](https://blog.wavesplatform.com)
+* [**Сайт сообщества**](https://wavescommunity.com)
